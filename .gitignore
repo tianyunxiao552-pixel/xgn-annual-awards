@@ -1,0 +1,17 @@
+node_modules/
+dist/
+data/*
+!data/.gitkeep
+.env
+*.log
+qa/
+.wrangler/
+
+# Local content and generated resources
+content/music/*
+!content/music/README.md
+public/fonts/
+*.sqlite*
+*.db
+.env.*
+!.env.example

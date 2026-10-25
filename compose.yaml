@@ -1,0 +1,13 @@
+services:
+  xgn:
+    build: .
+    restart: unless-stopped
+    ports:
+      - "127.0.0.1:4173:4173"
+    environment:
+      XGN_ADMIN_PASSWORD: ${XGN_ADMIN_PASSWORD:?Set an initial password in .env}
+      XGN_SECURE_COOKIE: ${XGN_SECURE_COOKIE:-0}
+    volumes:
+      - xgn_data:/app/data
+volumes:
+  xgn_data:

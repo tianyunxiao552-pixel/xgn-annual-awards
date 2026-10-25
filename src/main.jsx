@@ -1,0 +1,13 @@
+import React from "react";
+import { createRoot } from "react-dom/client";
+import { App } from "./App.jsx";
+import "./styles.css";
+import "./typography.css";
+import "./font-faces.css";
+import "./final-polish.css";
+
+createRoot(document.getElementById("root")).render(
+  <React.StrictMode>
+    <App />
+  </React.StrictMode>,
+);
